@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;;
+}
+body{
+  background: url('https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=1200&auto=format&fit=crop&q=60& ixlib-rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcHV0ZXIIMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+ /* Navigation - 2 */
+
+
+nav{
+  width: 96%;
+  margin: auto;
+  position: fixed;
+  top: 1%;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgb(192,22,237), rgb(226,48,238));
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+nav ul{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+nav li{
+  height: 100px;
+}
+nav a{
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+nav a:hover{
+  background: rgba(192,22,237,0.8);
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sideBar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 250px;
+  height: 100vh;
+  z-index: 999;
+  background: rgba(192,22,237,0.4);
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  backdrop-filter: blur(20px);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sideBar li{
+  width: 100%;
+}
+.sideBar a{
+  width: 100%;
+  padding: 0px 0px;
+}
+.hideindesktop{
+  display: none;
+}
+
+nav .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo .logo_img{
+  width: 60px;
+  height: 60px;
+  margin: 1px 10px;
+  border-radius: 8px;
+  background: radial-gradient(circle, rgb(126,255,161) 0%, rgb(126,255,251) 100%);
+  background: url('logo.jpg') center/cover;
+  overflow: hidden;
+}
+
+@media (max-width:880px){
+  .hide-m{
+    display: none;
+  }
+  .hideindesktop{
+    display: block;
+  }
+}
+@media (max-width:500px){
+  .sideBar{
+    max-width: 100%;
+  }
+}
+
